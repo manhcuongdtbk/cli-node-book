@@ -17,3 +17,6 @@ node_modules
 
 # Code editors
 .idea
+
+# Data
+notes.json
