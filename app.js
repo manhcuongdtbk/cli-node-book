@@ -1,11 +1,26 @@
 const yargs = require("yargs")
-const { listNotes, addNote, removeNote } = require("./notes")
+const { listNotes, readNote, addNote, removeNote } = require("./notes")
 
 yargs.command({
   command: "list",
   describe: "List your notes",
   handler: () => {
     listNotes()
+  }
+})
+
+yargs.command({
+  command: "read",
+  describe: "Read a note",
+  builder: {
+    title: {
+      describe: "Note title",
+      demandOption: true,
+      type: "string"
+    }
+  },
+  handler: (argv) => {
+    readNote(argv.title)
   }
 })
 
