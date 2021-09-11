@@ -1,0 +1,14 @@
+{
+  "name": "cli-node-book",
+  "version": "1.0.0",
+  "description": "A basic file based notebook written in nodejs",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "manhcuongdtbk",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
